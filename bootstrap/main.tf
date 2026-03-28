@@ -1,6 +1,6 @@
 # Terraform Bootstrap - Remote State Infrastructure
 # This creates the S3 bucket, DynamoDB table, and KMS key for state management
-## terraform code 
+## terraform code by Arun Enjali
 terraform {
   required_version = ">= 1.6.0"
 
