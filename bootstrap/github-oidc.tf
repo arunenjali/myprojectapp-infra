@@ -41,9 +41,9 @@ resource "aws_iam_role" "github_actions_terraform" {
           StringLike = {
             # Restrict to specific repos
             "token.actions.githubusercontent.com:sub" = [
-              "repo:YOUR_GITHUB_ORG/myprojectapp-infra:*",
-              "repo:YOUR_GITHUB_ORG/myprojectapp:*",
-              "repo:YOUR_GITHUB_ORG/myprojectapp-gitops:*"
+              "repo:arunenjali/myprojectapp-infra:*",
+              "repo:arunenjali/myprojectapp:*",
+              "repo:arunenjali/myprojectapp-gitops:*"
             ]
           }
         }

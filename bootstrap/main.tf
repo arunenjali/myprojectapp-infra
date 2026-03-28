@@ -103,3 +103,13 @@ resource "aws_dynamodb_table" "terraform_lock" {
     Name = local.table_name
   }
 }
+
+# TLS provider for GitHub OIDC certificate
+terraform {
+  required_providers {
+    tls = {
+      source  = "hashicorp/tls"
+      version = "~> 4.0"
+    }
+  }
+}
